@@ -1,0 +1,37 @@
+INFO autoreload 637 Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 02, 2022 - 17:48:27
+Django version 3.2.12, using settings 'blog.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+INFO basehttp 161 "GET / HTTP/1.1" 200 6764
+INFO basehttp 161 "GET /login/ HTTP/1.1" 200 3191
+INFO basehttp 161 "GET /register/ HTTP/1.1" 200 5307
+INFO autoreload 251 /Users/fan/Desktop/project/django_blog/users/views.py changed, reloading.
+INFO autoreload 637 Watching for file changes with StatReloader
+Traceback (most recent call last):
+  File "/Users/fan/Desktop/project/django_blog/manage.py", line 15, in <module>
+    execute_from_command_line(sys.argv)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/django/core/management/__init__.py", line 419, in execute_from_command_line
+    utility.execute()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/django/core/management/__init__.py", line 413, in execute
+    self.fetch_command(subcommand).run_from_argv(self.argv)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/django/core/management/base.py", line 354, in run_from_argv
+    self.execute(*args, **cmd_options)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/django/core/management/commands/runserver.py", line 61, in execute
+    super().execute(*args, **options)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/django/core/management/base.py", line 398, in execute
+    output = self.handle(*args, **options)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/django/core/management/commands/runserver.py", line 96, in handle
+    self.run(**options)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/django/core/management/commands/runserver.py", line 103, in run
+    autoreload.run_with_reloader(self.inner_run, **options)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/django/utils/autoreload.py", line 638, in run_with_reloader
+    start_django(reloader, main_func, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/django/utils/autoreload.py", line 614, in start_django
+    ensure_echo_on()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/django/utils/autoreload.py", line 95, in ensure_echo_on
+    if not termios or not sys.stdin.isatty():
+AttributeError: 'NoneType' object has no attribute 'isatty'
