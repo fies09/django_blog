@@ -12,7 +12,7 @@
         }
     }
     
-create database blog charset = utf-8;
+create database blog charset = utf8;
 create user 'user'@'%' IDENTIFIED by 'pwd'
 grant all on databaseName.* to user@'%';
 flush privileges；
