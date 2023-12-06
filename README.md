@@ -13,7 +13,7 @@
     }
     
 create database blog charset = utf8;
-create user 'user'@'%' IDENTIFIED by '123456'
+create user 'fany'@'%' IDENTIFIED by '123456'
 grant all on blog.* to user@'%';
 flush privileges；
 4,更新应用数据库
